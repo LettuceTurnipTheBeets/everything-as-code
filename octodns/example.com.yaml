@@ -1,0 +1,41 @@
+# Regular zone
+---
+? ''
+: - ttl: 3600
+    type: A
+    value: 1.2.3.4
+  - ttl: 3600
+    type: MX
+    values:
+    - exchange: mxa-77.email-provider.com.
+      preference: 10
+    - exchange: mxa-42.email-provider.com.
+      preference: 20
+  - ttl: 86400
+    type: NS
+    values:
+    - ns1.provider1-sdns.net.
+    - ns1.provider1-sdns.net.
+    - ns1.provider1-sdns.net.
+    - ns1.provider1-sdns.net.
+    - ns1.provider2-sdns.net.
+    - ns1.provider2-sdns.net.
+    - ns1.provider2-sdns.net.
+    - ns1.provider2-sdns.net.
+# A record with multiple values
+roundrobin:
+  ttl: 3600
+  type: A
+  values:
+  - 2.3.4.5
+  - 3.4.5.6
+  - 4.5.6.7
+  - 5.6.7.8
+  - 6.7.8.9
+  - 7.8.9.10
+  - 8.9.10.11
+# CNAME record
+www:
+  ttl: 10800
+  type: CNAME
+  value: example.com.

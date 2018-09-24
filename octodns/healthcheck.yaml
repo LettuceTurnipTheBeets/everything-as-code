@@ -1,0 +1,28 @@
+---
+? ''
+: - ttl: 3600
+    type: A
+    value: 1.2.3.4
+  - ttl: 86400
+    type: NS
+    values:
+    - ns1.provider1-sdns.net.
+    - ns1.provider1-sdns.net.
+    - ns1.provider1-sdns.net.
+    - ns1.provider1-sdns.net.
+    - ns1.provider2-sdns.net.
+    - ns1.provider2-sdns.net.
+    - ns1.provider2-sdns.net.
+    - ns1.provider2-sdns.net.
+chat:
+  healthcheck:
+    backup: 6.5.4.3
+    host: chat.example.com
+    interval: 900
+    path: /
+    port: 80
+    retries: 2
+    type: HTTP
+  ttl: 600
+  type: A
+  value: 3.4.5.6

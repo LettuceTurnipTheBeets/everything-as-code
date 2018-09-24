@@ -1,0 +1,41 @@
+---
+? ''
+: - ttl: 3600
+    type: A
+    value: 1.2.3.4
+  - ttl: 86400
+    type: NS
+    values:
+    - ns1.provider1-sdns.net.
+    - ns1.provider1-sdns.net.
+    - ns1.provider1-sdns.net.
+    - ns1.provider1-sdns.net.
+    - ns1.provider2-sdns.net.
+    - ns1.provider2-sdns.net.
+    - ns1.provider2-sdns.net.
+    - ns1.provider2-sdns.net.
+myrecord:
+  geo:
+    A1:
+    - us-east-1.example.com.
+    A2:
+    - us-east-2.example.com.
+    A3:
+    - us-east-3.example.com.
+    AF:
+    - eu-west-1.example.com.
+    AN:
+    - eu-west-1.example.com.
+    AS:
+    - eu-east-1.example.com.
+    EU:
+    - eu-west-1.example.com.
+    NA:
+    - us-east-1.example.com.
+    OC:
+    - us-west-1.example.com.
+    SA:
+    - sa-east-1.example.com.
+  ttl: 600
+  type: CNAME
+  value: default-geo.example.com.
